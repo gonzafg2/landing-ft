@@ -1,0 +1,38 @@
+---
+const services = [
+  {
+    title: "Cloud Infrastructure",
+    description: "Build and scale your infrastructure with our enterprise-grade cloud solutions.",
+    icon: "🚀"
+  },
+  {
+    title: "DevOps Automation",
+    description: "Streamline your development pipeline with automated workflows and CI/CD.",
+    icon: "⚙️"
+  },
+  {
+    title: "Security Solutions",
+    description: "Protect your data with advanced security measures and compliance frameworks.",
+    icon: "🔒"
+  },
+  {
+    title: "Software Development",
+    description: "Custom software solutions tailored to your business needs.",
+    icon: "💻"
+  }
+];
+---
+<section id="services" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-4xl font-bold text-center mb-16">Our Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {services.map(service => (
+        <div class="p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition">
+          <div class="text-4xl mb-4">{service.icon}</div>
+          <h3 class="text-xl font-semibold mb-2">{service.title}</h3>
+          <p class="text-gray-600">{service.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
