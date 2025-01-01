@@ -9,3 +9,8 @@ export interface MetaTags {
   title: string;
   description: string;
 }
+
+export interface HeroTexts {
+  title: string;
+  subtitle: string;
+}

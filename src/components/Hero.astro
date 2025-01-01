@@ -1,13 +1,14 @@
 ---
+import { state } from "@/store"
 ---
 <section style="background-image: url('/background.svg'); background-size: cover;" class="w-full relative h-screen flex items-center justify-center overflow-hidden">
-  <div class="absolute inset-0 bg-gradient-to-r from-blue-900/10 to-blue-700/10"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-blue-200/10"></div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
     <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-      Cloud Solutions for the Modern Era
+      { state().heroTexts.title }
     </h1>
     <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-      Empower your business with scalable, secure, and innovative cloud services designed for the future.
+      { state().heroTexts.subtitle }
     </p>
     <div class="flex justify-center gap-4">
       <a href="#services" class="px-8 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition">

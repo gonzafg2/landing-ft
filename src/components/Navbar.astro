@@ -1,19 +1,30 @@
 ---
-import { state } from "../store"
+import { state } from "@/store"
+import { Icon } from "astro-icon/components"
 ---
 <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between h-16">
-      <div class="flex items-center">
+      <div class="flex items-center space-x-3">
+        <img 
+          src="/logo-square.webp"
+          alt="Fleming Technologies Logo" 
+          class="h-8 w-auto"
+          loading="eager"
+        />
+
         <a href="/" class="text-xl font-semibold text-gray-900">Fleming Technologies</a>
       </div>
-      <div class="hidden md:flex items-center space-x-8">
+      <div class="hidden md:flex items-center space-x-9">
         {
         state().navItems.map((link) => (
-          <a href={link.href} class="text-gray-500 hover:text-gray-900">{link.text}</a>
+        <a href={link.href} class="flex items-center text-gray-500 hover:text-gray-900">
+          <Icon name={link.icon} class="text-gray-900 mr-1" size={24}></Icon>
+          {link.text}
+        </a>
         ))
         }
       </div>
-    </div>
+    </div>  
   </div>
 </nav>
