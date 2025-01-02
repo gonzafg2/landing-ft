@@ -14,3 +14,15 @@ export interface HeroTexts {
   title: string;
   subtitle: string;
 }
+
+export interface Service {
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface Feature {
+  title: string;
+  description: string;
+  icon?: string;
+}
