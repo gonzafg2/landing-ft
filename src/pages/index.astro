@@ -9,6 +9,9 @@ import Services from '@/components/Services.astro';
 import Features from '@/components/Features.astro';
 import Pricing from '@/components/Pricing.astro';
 import Contact from '@/components/Contact.astro';
+import WhatsAppButton from '@/components/WhatsAppButton.astro';
+
+const stateData = state();
 ---
 
 <Layout>
@@ -19,5 +22,6 @@ import Contact from '@/components/Contact.astro';
     <Features />
     <Pricing />
     <Contact />
+    <WhatsAppButton phone={stateData.whatsapp.phone} message={stateData.whatsapp.message} />
   </main>
 </Layout>

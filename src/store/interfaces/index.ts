@@ -33,3 +33,12 @@ export interface Plan {
   features: string[];
   popular?: boolean;
 }
+
+export interface WhatsApp {
+  phone: string;
+  message: string;
+  floating?: boolean;
+  position?: string;
+  icon?: string;
+  style?: any;
+}

@@ -1,4 +1,4 @@
-import type { NavItem, MetaTags, HeroTexts, Service, Feature, Plan } from '@/store/interfaces';
+import type { NavItem, MetaTags, HeroTexts, Service, Feature, Plan, WhatsApp } from '@/store/interfaces';
 
 export const state = (): {
   navItems: NavItem[];
@@ -7,6 +7,7 @@ export const state = (): {
   services: Service[];
   features: Feature[];
   plans: Plan[];
+  whatsapp: WhatsApp;
 } => ({
   navItems: [
     { text: 'Inicio', href: '/', isExternal: false, icon: 'mdi:home-outline' },
@@ -28,8 +29,9 @@ export const state = (): {
     description: 'Descripción de mi sitio web',
   },
   heroTexts: {
-    title: 'Cloud Solutions for the Modern Era',
-    subtitle: 'Empower your business with scalable, secure, and innovative cloud services designed for the future.',
+    title: 'Soluciones en la nube para la Era Moderna',
+    subtitle:
+      'Impulsa tu empresa con Servicios en Cloud escalables, seguros e innovadores diseñados para el futuro digital',
   },
   services: [
     {
@@ -103,4 +105,23 @@ export const state = (): {
       ],
     },
   ],
+  whatsapp: {
+    phone: '+56921218604',
+    message: 'Hola, me gustaría obtener más información sobre sus servicios.',
+    floating: true,
+    position: 'right', // 'right' o 'left'
+    icon: 'mdi:whatsapp',
+    style: {
+      backgroundColor: '#25D366',
+      color: '#FFFFFF',
+      borderRadius: '50%',
+      padding: '12px',
+      position: 'fixed',
+      bottom: '20px',
+      right: '20px',
+      zIndex: 1000,
+      boxShadow: '0 2px 5px rgba(0,0,0,0.3)',
+      cursor: 'pointer',
+    },
+  },
 });
