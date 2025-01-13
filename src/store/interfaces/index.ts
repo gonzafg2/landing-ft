@@ -26,3 +26,10 @@ export interface Feature {
   description: string;
   icon?: string;
 }
+
+export interface Plan {
+  name: string;
+  price: string;
+  features: string[];
+  popular?: boolean;
+}
