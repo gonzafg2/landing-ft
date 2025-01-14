@@ -1,11 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 
 export default {
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  darkMode: 'class',
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["SF Pro Display", "system-ui", "sans-serif"],
+        sans: ['SF Pro Display', 'system-ui', 'sans-serif'],
       },
     },
   },
