@@ -4,6 +4,7 @@
       <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Nombre</label>
       <input
         id="name"
+        autocomplete="true"
         v-model="name"
         class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-violet-500 focus:border-violet-500"
       />
@@ -14,6 +15,7 @@
       <input
         id="email"
         type="email"
+        autocomplete="true"
         v-model="email"
         class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-violet-500 focus:border-violet-500"
       />

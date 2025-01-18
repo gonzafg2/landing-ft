@@ -4,19 +4,14 @@
 
 :root {
   --accent: #003366;
-  --accent-gradient: linear-gradient(
-    45deg,
-    var(--accent),
-    #003366 30%,
-    white 60%
-  );
+  --accent-gradient: linear-gradient(45deg, var(--accent), #003366 30%, white 60%);
   --principal-color: #1a202c;
   --secondary-color: #2d3748;
   --tertiary-color: #4a5568;
 }
 
 html {
-  font-family: "SF Pro Display", system-ui, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
   background-color: #f6f6f6;
   scroll-behavior: smooth;
 }

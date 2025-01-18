@@ -146,20 +146,5 @@ export const state = (): {
   whatsapp: {
     phone: '+56921218604',
     message: 'Hola, me gustaría obtener más información sobre sus servicios.',
-    floating: true,
-    position: 'right', // 'right' o 'left'
-    icon: 'mdi:whatsapp',
-    style: {
-      backgroundColor: '#25D366',
-      color: '#FFFFFF',
-      borderRadius: '50%',
-      padding: '12px',
-      position: 'fixed',
-      bottom: '20px',
-      right: '20px',
-      zIndex: 1000,
-      boxShadow: '0 2px 5px rgba(0,0,0,0.3)',
-      cursor: 'pointer',
-    },
   },
 });
